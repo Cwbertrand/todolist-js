@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>js Todo List</title>
+</head>
+<body>
+    <div class="todo_container">
+        <header>
+            <h3>Bertrand's Todo List</h3>
+        </header>
+        <div class="display_flex">
+            <form>
+                <input type="text" class="todo_input">
+                <button class="todo_button" type="submit"><i class="fa-solid fa-square-plus"></i></button>
+            </form>
+            <select class="filter_todo" id="">
+                <option value="all">All todos</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+        <div class="todo_main">
+            <ul class="todo_list">
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

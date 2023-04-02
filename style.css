@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    color: #ffff;
+    background: linear-gradient(90deg, rgba(2,2,46,1) 0%, rgba(13,8,37,0.9582608695652174) 86%);
+}
+
+.todo_container{
+    height: 100%;
+}
+
+header h3{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.display_flex{
+    display: flex;
+    justify-content: center;
+}
+
+.display_flex select{
+    margin-left: 5px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    top: 18px;
+}
+
+.todo_container form{
+    text-align: center;
+    margin: 20px 0px;
+    position: relative;
+}
+
+form .todo_input{
+    border: none;
+    border-radius: 7px 0px 0px 7px;
+    padding: 7px 15px;
+    font-size: 20px;
+}
+
+
+
+form .todo_input:focus{
+    border:none;
+    outline: none;
+}
+
+form .todo_button{
+    padding: 7px 15px;
+    font-size: 20px;
+    border-radius: 0px 7px 7px 0px;
+    border: none;
+    background: #ffff;
+    transition: all 0.5s;
+}
+
+form .todo_button:hover{
+    background: rgb(34,193,195);
+    color: #ffff;
+}
+
+.todo_list .todo_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    transition: ease-in .5s;
+}
+
+.todo_div .todo_items{
+    list-style: none;
+    margin: 0px 10px;
+    width: 20rem;
+    padding: 10px;
+    background: rgba(8, 13, 27, 0.847);
+    color: #ffff;
+    border: none;
+
+}
+
+.todo_div .todo_items:focus{
+    border: none;
+    outline: none;
+}
+
+.todo_div .complete_btn,
+.todo_div .delete_btn,
+.todo_div .edit_btn{
+    color: #ffff;
+    border: none;
+    height: 45px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.fa-solid{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall_animation{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+.todo_div .edit_btn{
+    background: #32454a;
+}
+
+.todo_div .complete_btn{
+    background: green;
+}
+.todo_div .delete_btn{
+    background: #ff0000;
+}
+
+.todo_div .complete_btn .fa-check,
+.todo_div .delete_btn .fa-trash{
+    font-size: 20px;
+}
